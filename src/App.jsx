@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Greet from './Greet';
+import Clock from './Clock';
 
 class App extends Component {
     render() {
@@ -7,6 +8,7 @@ class App extends Component {
             <div>
                 <Greet firstName='yu'/>
                 <Greet firstName='jack'/>
+                <Clock />
             </div>
         );
     }
