@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Greet from './Greet';
 import Clock from './Clock';
+import Counter from './Counter';
 
 class App extends Component {
     render() {
@@ -9,6 +10,7 @@ class App extends Component {
                 <Greet firstName='yu'/>
                 <Greet firstName='jack'/>
                 <Clock />
+                <Counter />
             </div>
         );
     }
