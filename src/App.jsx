@@ -4,6 +4,7 @@ import Clock from './Clock';
 import Counter from './Counter';
 import LoginControl from './LoginControl';
 import MessageNotification from './MessageNotification';
+import NumberList from './NumberList';
 class App extends Component {
     render() {
         return (
@@ -14,6 +15,7 @@ class App extends Component {
                 <Counter />
                 <LoginControl />
                 <MessageNotification />
+                <NumberList numbers={[1, 2, 3, 4 ,5]} />
             </div>
         );
     }
