@@ -6,6 +6,7 @@ import LoginControl from './LoginControl';
 import MessageNotification from './MessageNotification';
 import NumberList from './NumberList';
 import SignUpForm from './SignUpForm';
+import TemperatureCalculator from './TemperatureCalculator';
 class App extends Component {
     render() {
         return (
@@ -18,6 +19,7 @@ class App extends Component {
                 <MessageNotification />
                 <NumberList numbers={[1, 2, 3, 4 ,5]} />
                 <SignUpForm />
+                <TemperatureCalculator />
             </div>
         );
     }
