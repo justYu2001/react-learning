@@ -7,6 +7,8 @@ import MessageNotification from './MessageNotification';
 import NumberList from './NumberList';
 import SignUpForm from './SignUpForm';
 import TemperatureCalculator from './TemperatureCalculator';
+import CustomComponent from './CustomComponent';
+import SplitPane from './SplitPane';
 class App extends Component {
     render() {
         return (
@@ -20,6 +22,17 @@ class App extends Component {
                 <NumberList numbers={[1, 2, 3, 4 ,5]} />
                 <SignUpForm />
                 <TemperatureCalculator />
+                <CustomComponent>
+                    <p>child</p>
+                </CustomComponent>
+                <SplitPane
+                    left={
+                        <div>contact</div>
+                    }
+                    right={
+                        <div>chat</div>
+                    }
+                />
             </div>
         );
     }
