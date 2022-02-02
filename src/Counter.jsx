@@ -1,28 +1,16 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class Counter extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            counter: 0,
-        };
-    }
+const Counter = () => {
+    const [count, setCount] = useState(0);
 
-    increase = (event) => {
-        console.log(event.currentTarget);
-        this.setState((state) => ({
-            counter: state.counter + 1,
-        }));
-    }
+    const increase = () => setCount(count + 1);
 
-    render() {
-        return (
-            <div>
-                <p>{this.state.counter}</p>
-                <button onClick={this.increase}>+1</button>
-            </div>
-        );
-    }
-}
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={increase}>Click me</button>
+        </div>
+    );
+};
 
 export default Counter;
