@@ -9,6 +9,7 @@ import SignUpForm from './SignUpForm';
 import TemperatureCalculator from './TemperatureCalculator';
 import CustomComponent from './CustomComponent';
 import SplitPane from './SplitPane';
+import MessageList from './MessageList';
 class App extends Component {
     render() {
         return (
@@ -33,6 +34,7 @@ class App extends Component {
                         <div>chat</div>
                     }
                 />
+                <MessageList />
             </div>
         );
     }
