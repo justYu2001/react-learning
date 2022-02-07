@@ -10,6 +10,7 @@ import TemperatureCalculator from './TemperatureCalculator';
 import CustomComponent from './CustomComponent';
 import SplitPane from './SplitPane';
 import MessageList from './MessageList';
+import Profile from './Profile';
 class App extends Component {
     render() {
         return (
@@ -35,6 +36,7 @@ class App extends Component {
                     }
                 />
                 <MessageList />
+                <Profile />
             </div>
         );
     }
